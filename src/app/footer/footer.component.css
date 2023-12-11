@@ -1,0 +1,61 @@
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-info, .social-media, .logo {
+    flex: 1;
+}
+
+
+.social-media a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+.logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100px; 
+    margin: 10px 0; 
+    border-radius: 60px;
+}
+a {
+    display: inline-block;
+    margin-right: 10px; /* Espaciado entre los enlaces */
+    text-decoration: none;
+  }
+
+  /* Estilo específico para el enlace de Facebook */
+  a.facebook img {
+    width: 20px; /* Ancho del logo */
+    height: 20px; /* Altura del logo */
+    margin-right: 5px; /* Espaciado entre el logo y el texto */
+  }
+
+  /* Estilo específico para el enlace de Instagram */
+  a.instagram img {
+    width: 20px; /* Ancho del logo */
+    height: 20px; /* Altura del logo */
+    margin-right: 5px; /* Espaciado entre el logo y el texto */
+  }
+
+  /* Estilo específico para el enlace de Twitter */
+  a.twitter img {
+    width: 20px; /* Ancho del logo */
+    height: 20px; /* Altura del logo */
+    margin-right: 5px; /* Espaciado entre el logo y el texto */
+  }
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurfVibesCamp Blog</title>
+
+</head>
+<app-header></app-header>
+
+<body>
+    <button #scrollBtn id="scroll-to-top" (click)="scrollToTop()">↑</button>
+</body>
+
+<div class="blog-container">
+
+
+    <header>
+        <br>
+        <h1 style="text-align: center;">{{titulo}} Blog</h1>
+    </header>
+
+
+    <main>
+        <div class="container">
+            <div class="card">
+                
+                <div class="half">
+                    <div class="half">
+                        <img src="../../assets/img/pet.jpg" alt="Imagen 1" style="width: 100%; height: 400px;">
+                    </div>
+                    <hr>
+                    <h2 style="text-align: center;">SurfCanine: Navegando Olas con tu Mejor Amigo</h2>
+                    <p>
+                        Blog: "SurfCanine: Navegando Olas con tu Mejor Amigo"
+                        ¡Hola amantes del surf y amigos peludos! ¿Te has preguntado alguna vez si podrías llevar a tu
+                        mascota a surfear contigo? Bueno, estás en el lugar adecuado. En este blog, exploraremos la
+                        emocionante posibilidad de compartir las olas con tu compañero canino. ¡Prepárate para descubrir
+                        el maravilloso mundo del surf canino!
+
+                        Surf y Amistad: Una Combinación Perfecta 🐾🏄‍♂️
+                        El amor por el surf y la conexión con nuestras mascotas son dos experiencias incomparables.
+                        Entonces, ¿por qué no combinarlas? Surfear con tu perro no solo es posible, ¡sino que también
+                        puede ser una aventura increíblemente divertida y emocionante para ambos!</p>
+                    <button *ngIf="showContentBtn" class="btn btn-primary" (click)="toggleContent()">Ver Mas</button>
+                    <div *ngIf="showContent" class="content">
+                        <p>
+                            <span class="bold" style="text-align: center;">Preparación para el Éxito: Consejos Prácticos
+                            </span> <br>
+
+                            <span class="bold">Entrenamiento en Tierra Firme:</span> <br>
+                            Antes de lanzarte a las olas, es esencial que tu perro se sienta cómodo en la tabla.
+                            Practica en tierra firme, deja que se acostumbre a la sensación y ¡listo para el agua! <br>
+                            <span class="bold"> Equipamiento Adecuado:</span> <br>
+
+                            Asegúrate de que tu perro lleve un chaleco salvavidas adecuado y que esté acostumbrado a
+                            usarlo. La seguridad es clave para una experiencia positiva. <br>
+                            <span class="bold"> Escoge el Lugar Adecuado:</span> <br>
+
+                            No todas las playas son ideales para el surf canino. Busca lugares con olas suaves y playas
+                            amigables para mascotas. ¡Investigación previa es la clave! <br>
+                            <span class="bold">¡Hora de Surcar las Olas! 🌊🐶</span> <br>
+                            
+                            Primera Sesión: <br>
+                            Comienza con sesiones cortas para que tu perro se adapte gradualmente. Utiliza comandos
+                            positivos y refuerza el comportamiento positivo con golosinas y elogios. <br>
+
+                            Crea una Rutina Positiva: <br>
+                            Establece una rutina para que tu perro asocie el surf con algo divertido. ¡Pronto estará
+                            emocionado cada vez que veas la tabla de surf! <br>
+                            <span class="bold">Beneficios del Surf para Perros: Más Allá de la Diversión</span> <br>
+                            
+                            
+                            Ejercicio y Salud Mental: <br>
+                            El surf no solo es un excelente ejercicio físico, sino que también estimula la mente de tu
+                            perro. La concentración requerida en la tabla puede ser un estímulo mental valioso. <br>
+
+                            Vínculo Más Fuerte: <br>
+                            Compartir una actividad tan única refuerza el vínculo entre tú y tu mascota. El surf se
+                            convierte en una experiencia compartida que ambos disfrutan. <br>
+
+                            Historias Inspiradoras: Surfers de Cuatro Patas <br>
+                            Descubre historias inspiradoras de perros surfistas que han conquistado olas y corazones.
+                            Desde competiciones hasta aventuras espontáneas, estas historias demuestran que el surf
+                            canino es más que posible, ¡es extraordinario! <br>
+                            <span class="bold">Conclusión: Nuevos Horizontes con tu Amigo Peludo 🌈</span> <br>
+                            
+                            Surfear con tu mascota es una forma emocionante de llevar tu amor por las olas al siguiente
+                            nivel. Con la preparación adecuada, paciencia y mucha diversión, puedes disfrutar de
+                            momentos inolvidables en el agua con tu mejor amigo. ¿Estás listo para hacer que tu próximo
+                            día de surf sea inolvidable tanto para ti como para tu peludo compañero? ¡Surf's up, amigos
+                            de cuatro patas! 🤙🐾
+                        </p>
+                        <button *ngIf="!showContentBtn" class="btn btn-primary" (click)="toogleContentM()">Ver
+                            Menos</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+
+    </main>
+
+</div>
+
+<app-footer></app-footer>
+
+</html>

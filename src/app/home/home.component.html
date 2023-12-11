@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurfVibesCamp</title>
+
+</head>
+<app-header></app-header>
+<body>
+    <button #scrollBtn id="scroll-to-top" (click)="scrollToTop()">↑</button>
+    <div id="overlay">
+        <div id="message-container">
+            <h2>Descubre la Emoción del Surf en {{titulo}}</h2>
+            <p>Explora nuestras actividades emocionantes y sumérgete en la cultura del surf. <br>¡La aventura te espera!
+            </p>
+            <br>
+            <a id="whatsapp-btn" href="https://api.whatsapp.com/send?phone=3124788327" target="_blank">Consulta un Asesor</a>
+        </div>
+    </div>
+</body>
+<div id="vacation-section">
+    <div class="container">
+        <h1>Unas Vacaciones De Surf Con Todo Incluido</h1>
+        <br>
+        <h3 id="vacation-message">Descubre la emoción del surf en Colombia con nuestras increíbles vacaciones en la
+            hermosa
+            Playa de Puerto Colombia. Sumérgete en la serenidad de sus paisajes naturales y disfruta de una atmósfera
+            tranquila con poca gente, creando el escenario perfecto para tus sueños de surf.
+            <br> <br>
+
+            En SurfVibesCamp, te ofrecemos todo lo necesario para unas vacaciones inolvidables.
+            <br>Nuestro campamento de surf
+            cuenta con clases para todos los niveles, alquiler de equipo de primera calidad, alojamiento justo en la
+            playa,
+            deliciosa comida local, sesiones de fotografía para capturar esos momentos épicos y muchas más experiencias
+            emocionantes.
+        </h3>
+    </div>
+
+    <div id="video-container">
+        <iframe id="vacation-video" src="https://www.youtube.com/embed/eumuQXhUF8c?si=eEegqxrIEsHBusJh" frameborder="0"
+            allowfullscreen></iframe>
+    </div>
+</div>
+<div class="container">
+    <div class="card">
+        <div class="half">
+            <img src="../../assets/img/instructor.avif" alt="Imagen 1">
+        </div>
+        <div class="half">
+            <h2 style="text-align: center;">Campamento de surf</h2>
+            <br>
+            <p>
+                <span style="font-weight: 800;">Mision:</span>
+
+                En nuestro campamento de surf, nos comprometemos a ofrecer una experiencia única y transformadora a
+                todos aquellos que buscan sumergirse en el apasionante mundo del surf. Nuestra misión es inspirar y
+                empoderar a individuos de todas las edades y niveles de habilidad, brindándoles las herramientas
+                necesarias para alcanzar su máximo potencial en las olas y en la vida.
+
+                Nos esforzamos por crear un ambiente inclusivo y acogedor, donde la pasión por el surf se fusiona con
+                valores fundamentales como el respeto por el océano, la seguridad, la camaradería y el amor por la
+                naturaleza. A través de la enseñanza experta, la conexión con la comunidad y el fomento de la confianza
+                en uno mismo, buscamos ser el catalizador para el crecimiento personal y la creación de recuerdos
+                inolvidables.
+                <br><br>
+
+                <span style="font-weight: 800;">Vision:</span>
+
+                Nos visualizamos como un oasis para los amantes del surf, un lugar donde la emoción de las olas se
+                combina con la serenidad del entorno costero. Aspiramos a ser reconocidos como líderes en la instrucción
+                de surf, proporcionando programas innovadores y personalizados que se adaptan a las necesidades
+                individuales de cada participante.
+
+                Anhelamos ser un faro de sostenibilidad, promoviendo prácticas respetuosas con el medio ambiente y
+                contribuyendo a la conservación de los océanos. Además, buscamos forjar alianzas con la comunidad local
+                para fomentar el turismo responsable y contribuir al desarrollo económico sostenible.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+
+        <div class="half">
+            <h2>Ecoturismo</h2>
+            <p>
+                <span style="font-weight: 800;">Ecoturismo en el Campamento de Surf en Puerto Colombia:</span><br>
+
+
+                En nuestro compromiso con la sostenibilidad y la preservación del entorno costero, el campamento de surf
+                en Puerto Colombia se esfuerza por integrar prácticas de ecoturismo que resalten la belleza natural de
+                la región mientras minimizan el impacto ambiental. Nuestra visión es ser líderes en la promoción de un
+                turismo responsable que contribuya a la conservación de los recursos naturales y fomente el respeto por
+                el medio ambiente.
+
+                Principios del Ecoturismo:
+
+                Conexión con la Naturaleza: Nuestro campamento está diseñado para sumergir a los participantes en la
+                rica biodiversidad costera. Promovemos actividades que permitan a los visitantes apreciar y entender la
+                importancia de los ecosistemas marinos y terrestres locales.
+
+                Educación Ambiental: Ofrecemos programas educativos que destacan la fragilidad de los océanos, la
+                diversidad biológica y la importancia de la conservación. Queremos que nuestros visitantes no solo
+                disfruten del surf, sino que también se conviertan en defensores del medio ambiente.
+
+                Turismo Responsable: Colaboramos estrechamente con la comunidad local para garantizar que el turismo
+                beneficie a todos. Fomentamos la contratación local, apoyamos proyectos comunitarios y promovemos
+                productos y servicios sostenibles.
+
+                Prácticas Ambientales Sostenibles: Implementamos medidas para reducir nuestra huella ecológica, como la
+                gestión eficiente de residuos, el uso responsable del agua y la energía renovable. También nos
+                esforzamos por minimizar cualquier impacto negativo durante nuestras actividades.
+            </p>
+            <button class="btn btn-primary" name="verMas" (click)="VerMasBlog1()">ver mas</button>
+        </div>
+        <div class="half">
+            <img src="../../assets/img/ecoturismo.jpg" alt="Imagen 2">
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="half">
+            <img src="../../assets/img/ambiete.jpg" alt="Imagen 3">
+        </div>
+        <div class="half">
+            <h2>Nosotros</h2>
+            <p>Nuestro equipo en el campamento de surf en Puerto Colombia está formado por un grupo de individuos
+                apasionados que comparten dos grandes amores: el surf y el medio ambiente. Estos surfeadores y
+                ecologistas se han unido con el propósito común de no solo enseñar la emocionante práctica del surf,
+                sino también de ser guardianes comprometidos de la belleza natural que nos rodea.
+                <br>
+                <span id="subtittle">Surfeadores Expertos</span>
+                <br>
+                <span id="subtittle">Conocimiento Profundo del Entorno Marino</span>
+                <br>
+                <span id="subtittle">Compromiso con la Sostenibilidad</span>
+                <br>
+                <span id="subtittle">Educadores Apasionados</span>
+                <br>
+                <span id="subtittle">Innovadores en el Ecoturismo</span>
+                <br>
+                El equipo del campamento no solo busca crear surfistas habilidosos, sino también ciudadanos del mundo
+                conscientes y respetuosos con la naturaleza. Su dedicación al surf, la enseñanza y la conservación crea
+                un ambiente único donde cada participante no solo aprende a dominar las olas, sino también a amar y
+                proteger el océano que lo hace posible.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+
+        <div class="half">
+            <h2>Bienvenidos a Nuestro Refugio Ecológico</h2>
+            <p> Donde la Sencillez se Une a la Sostenibilidad
+
+                En el corazón de la naturaleza, nuestro lugar de hospedaje es un oasis sencillo y acogedor, diseñado
+                para aquellos que buscan una experiencia única, donde la comodidad se encuentra con un compromiso
+                inquebrantable con la sostenibilidad. Nuestro refugio encarna la armonía con el entorno, proporcionando
+                una escapada relajante que deja una huella mínima en nuestro preciado planeta.
+                <br>
+                <br>
+                En nuestro refugio ecológico, la simplicidad se convierte en lujo y la sostenibilidad en comodidad. Cada
+                momento aquí es una oportunidad para reconectar con la naturaleza, apreciar la tranquilidad y aprender
+                sobre la importancia de vivir en armonía con nuestro entorno. Ya sea disfrutando de una hamaca con
+                vistas al océano o participando en nuestras actividades ecoamigables, en nuestro hospedaje, cada huésped
+                es parte de la historia de conservación y respeto por el planeta
+            </p>
+        </div>
+        <div class="half">
+            <img src="../../assets/img/hospedaje.jpg" alt="Imagen 4">
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
+</html>
